@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.header{
+    text-align: center;
+    background-color: $color-carbon;
+    padding: 10px;
+
+    &__title{
+        color: $color-white;
+        margin: 0;
+    }
+}

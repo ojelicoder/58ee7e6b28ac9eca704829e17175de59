@@ -1,0 +1,98 @@
+@import '../../styles/variables';
+
+.detail{
+    background-color: $color-white;
+    margin-bottom: 50px;
+
+    &__product{
+        display: flex;
+        justify-content: center;
+        background-color: $color-bleached-silk;
+        margin: 15px 0 50px;
+        padding: 50px;
+        &--price{
+            font-size: 50px;
+            font-weight: 700;
+
+            @media screen and (max-width: $screenmd) {
+                font-size: 30px
+            }
+        }
+        &--oldprice{
+            text-decoration: line-through;
+            opacity: .5;
+            margin-left: 10px;
+        }
+        &--img{
+            background-color: #fff;
+            max-height: 300px;
+            height: auto;
+            width: inherit;
+
+            @media screen and (max-width: $screensm) {
+                max-height: none;
+            }
+
+            &--wrapper{
+                width: 300px;
+                height: auto;
+                display: flex;
+                background-color: $color-white;
+                justify-content: center;
+                align-items: center;
+                margin-right: 50px;
+
+                @media screen and (max-width: $screenmd) {
+                    margin-right: 20px;
+                }
+    
+                @media screen and (max-width: $screensm) {
+                    width: 100%;
+                    margin-right: 0;
+                    height: auto;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &--title{
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        &--info{
+            background: $color-white;
+            padding: 50px;
+            text-align: center;
+            &--body{
+                text-align: left;
+                font-size: 14px;
+                line-height: 25px;
+                color: $color-argent;
+
+                @media screen and (max-width: $screenmd) {
+                    font-size: 12px
+                }
+
+                ul{
+                    color: $color-argent;
+                }
+            }
+            @media screen and (max-width: $screenmd) {
+                padding: 20px;
+            }
+        }
+        @media screen and (max-width: $screenmd) {
+            margin: 5px 0 20px;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: $screensm) {
+            flex-direction: column;
+        }
+    }
+    &__return{
+        margin-top: 35px;
+        font-size: 14px;
+        color: $color-argent;
+    }
+}
